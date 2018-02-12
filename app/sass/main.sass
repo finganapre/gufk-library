@@ -1,0 +1,122 @@
+@import "_varSass.sass"
+
+body, html
+	background-color: white
+	background: url(../img/mainBg.jpg) 100% 100% no-repeat
+	background-size: cover
+	color: white
+.main-header
+	padding-top: 60px
+.headerContent
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+.logoContainer
+	display: flex
+	flex-direction: row
+	justify-content: flex-start
+	align-items: center
+	flex-wrap: nowrap
+	align-content: center
+	&__logo
+	&__hr
+		width: 1px
+		height: 67px
+		background-color: white
+		margin: 0 30px 0 30px
+	&__h
+.linkContainer
+	display: flex
+	flex-direction: column
+	justify-content: flex-start
+	align-items: flex-start
+	flex-wrap: nowrap
+	align-content: center
+	&__a
+		color: white
+		padding: 5px
+		&:hover
+			color: white
+.main
+
+.ulBlock
+	display: block
+	margin: 0
+	padding: 0
+	margin-top: 300px
+	& .li
+		list-style: none
+		display: inline-block
+		padding: 0
+		margin: 0
+		border: 1px solid white
+		margin: 0 20px 20px 0
+		& a
+			padding: 20px
+			color: white
+			font-size: 1.4em
+			display: block
+			font-weight: 600
+			transition: 0.25s
+			&:hover
+				text-decoration: none
+				background-color: white
+				color: #666
+		&:last-child
+			margin-bottom: 0
+
+	.button
+		margin-bottom: 20px
+		margin-right: 20px
+
+// ----- default Sass Style ----- //
+// button
+.button
+	display: inline-block
+	border: none
+	color: #fff
+	text-decoration: none
+	background-color: $blue
+	padding: 15px 45px
+	font-size: 13px
+	text-transform: uppercase
+	font-weight: 600
+	letter-spacing: 3px
+	border-radius: 2px
+	text-align: center
+	position: relative
+	outline: none
+	transition: background-color .1s ease
+	cursor: pointer
+	&::after
+		transition: background-color .2s ease
+		position: absolute
+		content: ''
+		height: 4px
+		bottom: 0
+		width: 100%
+		background-color: darken($blue, 50%)
+		opacity: .18
+		border-bottom-left-radius: 2px
+		border-bottom-right-radius: 2px
+		left: 0
+	&:focus, &:hover
+		text-decoration: none
+		color: #fff
+		outline: none
+	&:hover
+		background-color: ($blue, 5%)
+		&::after
+			opacity: .22
+	&:active
+		background-color: darken($blue, 5%)
+		&::after
+			opacity: .32
+
+// footer down
+body, html
+	height: 100%
+.wrapper
+	display: flex
+	flex-direction: column
+	height: 100%
