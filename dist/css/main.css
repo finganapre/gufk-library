@@ -1,16 +1,203 @@
-body {
-  background-color: lightgray;
+body, html {
+  background-color: white;
+  background: url(../img/mainBg.jpg) 100% 100% no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  color: white;
+  overflow-x: hidden; }
+
+.main-header {
+  padding-top: 60px; }
+
+.headerContent {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.logoContainer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center; }
+  .logoContainer__hr {
+    width: 1px;
+    height: 67px;
+    background-color: white;
+    margin: 0 30px 0 30px; }
+
+.linkContainer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center; }
+  .linkContainer__a {
+    color: white;
+    padding: 5px; }
+    .linkContainer__a:hover {
+      color: white; }
+
+.ulBlock {
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin-top: 300px; }
+  .ulBlock .li {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    border: 1px solid white;
+    margin: 0 20px 20px 0; }
+    .ulBlock .li a {
+      padding: 20px;
+      color: white;
+      font-size: 1.4em;
+      display: block;
+      font-weight: 600;
+      -webkit-transition: 0.25s;
+      -o-transition: 0.25s;
+      transition: 0.25s; }
+      .ulBlock .li a:hover {
+        text-decoration: none;
+        background-color: white;
+        color: #666; }
+    .ulBlock .li:last-child {
+      margin-bottom: 0; }
+  .ulBlock .button {
+    margin-bottom: 20px;
+    margin-right: 20px; }
+
+form[name="feedback"] {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.2em; }
+  form[name="feedback"] input {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-bottom: solid white 1px;
+    -webkit-border-radius: 0px;
+            border-radius: 0px;
+    color: white;
+    font-size: 1em;
+    padding: 10px;
+    font-weight: 500; }
+    form[name="feedback"] input:focus {
+      background-color: rgba(255, 255, 255, 0);
+      border: none;
+      border-bottom: solid white 1px;
+      -webkit-border-radius: 0px;
+              border-radius: 0px;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      color: white; }
+    form[name="feedback"] input::-webkit-input-placeholder {
+      color: #e5e5e5; }
+    form[name="feedback"] input::-moz-placeholder {
+      color: #e5e5e5; }
+    form[name="feedback"] input:-ms-input-placeholder {
+      color: #e5e5e5; }
+    form[name="feedback"] input::-ms-input-placeholder {
+      color: #e5e5e5; }
+    form[name="feedback"] input::placeholder {
+      color: #e5e5e5; }
+    form[name="feedback"] input[type="submit"] {
+      border: 1px solid white;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      padding: 15px;
+      font-size: 0.85em;
+      font-weight: bold;
+      color: white;
+      -webkit-transition: 0.25s;
+      -o-transition: 0.25s;
+      transition: 0.25s; }
+      form[name="feedback"] input[type="submit"]:hover {
+        color: #666;
+        background-color: white;
+        border: 1px solid white; }
+  form[name="feedback"] textarea {
+    -webkit-border-radius: 0;
+            border-radius: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    color: #333;
+    font-size: 1.05em;
+    resize: none;
+    padding: 10px;
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.6);
+    -webkit-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+    font-weight: 500; }
+    form[name="feedback"] textarea:focus {
+      background-color: rgba(255, 255, 255, 0.8);
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      border: none;
+      color: #333; }
 
 .button {
   display: inline-block;
   border: none;
   color: #fff;
   text-decoration: none;
-  background-color: #fff;
+  background-color: #0c317f;
   padding: 15px 45px;
   font-size: 13px;
   text-transform: uppercase;
@@ -34,7 +221,7 @@ body {
     height: 4px;
     bottom: 0;
     width: 100%;
-    background-color: gray;
+    background-color: black;
     opacity: .18;
     -webkit-border-bottom-left-radius: 2px;
             border-bottom-left-radius: 2px;
@@ -43,12 +230,43 @@ body {
     left: 0; }
   .button:focus, .button:hover {
     text-decoration: none;
-    color: #fff; }
+    color: #fff;
+    outline: none; }
   .button:hover {
-    background-color: white; }
+    background-color: #0c317f, 5%; }
     .button:hover::after {
       opacity: .22; }
   .button:active {
-    background-color: #f2f2f2; }
+    background-color: #0a2868; }
     .button:active::after {
       opacity: .32; }
+
+.mrg-btm-40 {
+  margin-bottom: 40px; }
+
+body, html {
+  height: 100%; }
+
+.wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%; }
+
+.content {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto; }
+
+.footer {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto; }
