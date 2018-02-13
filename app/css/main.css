@@ -4,7 +4,8 @@ body, html {
   -webkit-background-size: cover;
           background-size: cover;
   color: white;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  min-width: 320px; }
 
 .main-header {
   padding-top: 60px; }
@@ -84,11 +85,20 @@ body, html {
     .linkContainer__a:hover {
       color: white; }
 
+.headerBtmHr {
+  display: none;
+  border: 0;
+  height: 1px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(rgba(255, 255, 255, 0.75)), to(rgba(255, 255, 255, 0)));
+  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+  background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0)); }
+
 .ulBlock {
   display: block;
   margin: 0;
   padding: 0;
-  margin-top: 300px; }
+  margin-top: 200px; }
   .ulBlock .li {
     list-style: none;
     display: inline-block;
@@ -270,3 +280,133 @@ body, html {
   -webkit-flex: 0 0 auto;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto; }
+
+@media (max-width: 575px) {
+  .main-header {
+    padding-top: 10px !important; }
+  .logoContainer {
+    margin-bottom: 5px !important; }
+  .logoContainer__h {
+    font-size: 2.3em; }
+  .ulBlock {
+    font-size: 0.75em; }
+  .ulBlock:first-child {
+    margin-top: 10px !important; } }
+
+@media (max-width: 767px) {
+  .logoContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%; }
+  .logoContainer__h {
+    width: 100%; }
+  .logoContainer__logo {
+    display: none; }
+  .logoContainer__hr {
+    display: none; }
+  .linkContainer {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -webkit-flex-direction: column !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-pack: flex-center !important;
+    -webkit-justify-content: flex-center !important;
+        -ms-flex-pack: flex-center !important;
+            justify-content: flex-center !important;
+    -webkit-box-align: center !important;
+    -webkit-align-items: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    width: 100%; }
+  .linkContainer__a {
+    width: 100%;
+    text-align: center; }
+  .ulBlock {
+    margin-top: 60px !important;
+    text-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: flex-center;
+    -webkit-justify-content: flex-center;
+        -ms-flex-pack: flex-center;
+            justify-content: flex-center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .ulBlock .li {
+    margin-right: 0; }
+  .headerBtmHr {
+    display: block; } }
+
+@media (max-width: 991px) {
+  .main-header {
+    padding-top: 30px; }
+  .headerContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .logoContainer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 20px; }
+  .linkContainer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .linkContainer__a {
+    margin-right: 10px; }
+  .logoContainer__h {
+    text-align: center; }
+  .ulBlock {
+    margin-top: 120px; } }

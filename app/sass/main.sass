@@ -6,6 +6,7 @@ body, html
 	background-size: cover
 	color: white
 	overflow-x: hidden
+	min-width: 320px
 .main-header
 	padding-top: 60px
 .headerContent
@@ -40,11 +41,17 @@ body, html
 			color: white
 .main
 
+.headerBtmHr
+	display: none
+	border: 0
+	height: 1px
+	background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0))
+
 .ulBlock
 	display: block
 	margin: 0
 	padding: 0
-	margin-top: 300px
+	margin-top: 200px
 	& .li
 		list-style: none
 		display: inline-block
@@ -188,3 +195,77 @@ body, html
 	flex: 1 0 auto
 .footer
 	flex: 0 0 auto
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 575px)
+	.main-header
+		padding-top: 10px !important
+	.logoContainer
+		margin-bottom: 5px !important
+	.logoContainer__h
+		font-size: 2.3em
+	.ulBlock
+		font-size: 0.75em
+	.ulBlock:first-child
+		margin-top: 10px !important
+// Medium devices (tablets, 768px and up)
+@media (max-width: 767px)
+	.logoContainer
+		flex-direction: column
+		justify-content: flex-start
+		align-items: center
+		width: 100%
+	.logoContainer__h
+		width: 100%
+	.logoContainer__logo
+		display: none
+	.logoContainer__hr
+		display: none
+	.linkContainer
+		flex-direction: column !important
+		justify-content: flex-center !important
+		align-items: center !important
+		width: 100%
+	.linkContainer__a
+		width: 100%
+		text-align: center
+	.ulBlock
+		margin-top: 60px !important
+		text-align: center
+		display: flex
+		flex-direction: column
+		justify-content: flex-center
+		align-items: center
+	.ulBlock .li
+		margin-right: 0
+	.headerBtmHr
+		display: block
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 991px)
+	.main-header
+		padding-top: 30px
+	.headerContent
+		flex-direction: column
+		justify-content: flex-start
+		align-items: flex-start
+	.logoContainer
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		margin-bottom: 20px
+	.linkContainer
+		flex-direction: row
+		justify-content: flex-start
+		align-items: flex-start
+	.linkContainer__a
+		margin-right: 10px
+	
+	.logoContainer__h
+		text-align: center
+	.ulBlock
+		margin-top: 120px
+
+// Extra large devices (large desktops, 1200px and up)
+@media (max-width: 1199px)
+	.logoContainer
