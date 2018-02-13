@@ -5,6 +5,7 @@ body, html
 	background: url(../img/mainBg.jpg) 100% 100% no-repeat
 	background-size: cover
 	color: white
+	overflow-x: hidden
 .main-header
 	padding-top: 60px
 .headerContent
@@ -69,6 +70,66 @@ body, html
 		margin-bottom: 20px
 		margin-right: 20px
 
+form[name="feedback"]
+	justify-content: center
+	align-items: center
+	font-size: 1.2em
+	& input
+		background-color: rgba(255, 255, 255, 0)
+		border: none
+		border-bottom: solid white 1px
+		border-radius: 0px
+		color: white
+		font-size: 1em
+		padding: 10px
+		font-weight: 500
+		&:focus
+			background-color: rgba(255, 255, 255, 0)
+			border: none
+			border-bottom: solid white 1px
+			border-radius: 0px
+			box-shadow: none
+			color: white
+		&::placeholder
+			color: #e5e5e5
+		&[type="submit"]
+			border: 1px solid white
+			cursor: pointer
+			text-transform: uppercase
+			letter-spacing: 2px
+			padding: 15px
+			font-size: 0.85em
+			font-weight: bold
+			color: white
+			transition: 0.25s
+			&:hover
+				color: #666
+				background-color: white
+				border: 1px solid white
+	& textarea
+		border-radius: 0
+		background-color: rgba(255, 255, 255, 0.7)
+		border: none
+		color: #333
+		font-size: 1.05em
+		resize: none
+		padding: 10px
+		margin-bottom: 30px
+		background-color: rgba(255, 255, 255, 0.6)
+		transition: 0.25s
+		font-weight: 500
+		&:focus
+			background-color: rgba(255, 255, 255, 0.8)
+			box-shadow: none
+			border: none
+			color: #333
+
+
+
+
+
+
+
 // ----- default Sass Style ----- //
 // button
 .button
@@ -113,6 +174,9 @@ body, html
 		&::after
 			opacity: .32
 
+.mrg-btm-40
+	margin-bottom: 40px
+
 // footer down
 body, html
 	height: 100%
@@ -120,3 +184,7 @@ body, html
 	display: flex
 	flex-direction: column
 	height: 100%
+.content
+	flex: 1 0 auto
+.footer
+	flex: 0 0 auto
