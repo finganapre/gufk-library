@@ -520,12 +520,12 @@
 	"buffers":
 	[
 		{
-			"file": "/home/finganapre/MEGA/Programming/START/gulpFile.js",
+			"file": "/home/sergey_a/Рабочий стол/dist/index.html",
 			"settings":
 			{
-				"buffer_size": 3854,
+				"buffer_size": 4176,
 				"encoding": "UTF-8",
-				"line_ending": "Windows"
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -630,10 +630,13 @@
 	},
 	"expanded_folders":
 	[
-		"/home/finganapre/MEGA/Programming/START"
+		"/home/sergey_a/Рабочий стол/gufk-library-master"
 	],
 	"file_history":
 	[
+		"/home/sergey_a/Рабочий стол/dist/js/libs.min.js",
+		"/home/sergey_a/Рабочий стол/dist/js/main.js",
+		"/home/finganapre/MEGA/Programming/START/gulpFile.js",
 		"/home/finganapre/MEGA/Programming/gulpTest/package.json",
 		"/home/finganapre/MEGA/Programming/gulpTest/app/index.html",
 		"/home/finganapre/MEGA/Programming/gulpTest/gulpFile.js",
@@ -758,14 +761,11 @@
 		"/home/finganapre/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
 		"/home/finganapre/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
 		"/home/finganapre/MEGA/Programming/Projects/УралГуфк сайт/uralgufk.sublime-project",
-		"/home/finganapre/MEGA/Programming/Projects/УралГуфк сайт/testSVG.css",
-		"/home/finganapre/MEGA/Programming/Projects/УралГуфк сайт/testSVG.html",
-		"/home/finganapre/MEGA/Programming/Projects/УралГуфк сайт/test.css",
-		"/home/finganapre/MEGA/Programming/Projects/УралГуфк сайт/test.html"
+		"/home/finganapre/MEGA/Programming/Projects/УралГуфк сайт/testSVG.css"
 	],
 	"find":
 	{
-		"height": 28.0
+		"height": 23.0
 	},
 	"find_in_files":
 	{
@@ -853,27 +853,27 @@
 			[
 				{
 					"buffer": 0,
-					"file": "/home/finganapre/MEGA/Programming/START/gulpFile.js",
+					"file": "/home/sergey_a/Рабочий стол/dist/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3854,
+						"buffer_size": 4176,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								508,
-								508
+								2056,
+								2056
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 765.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -884,7 +884,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 28.0
+		"height": 23.0
 	},
 	"input":
 	{
@@ -921,7 +921,7 @@
 	"project": "librarySite.sublime-project",
 	"replace":
 	{
-		"height": 52.0
+		"height": 42.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -962,8 +962,8 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
-	"side_bar_width": 293.0,
+	"side_bar_visible": false,
+	"side_bar_width": 226.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

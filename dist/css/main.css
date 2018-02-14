@@ -213,6 +213,42 @@ form[name="feedback"] {
     form[name="feedback"] textarea::placeholder {
       color: #929292; }
 
+.main-footer {
+  margin-top: 20px; }
+
+.min-logo-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px; }
+
+.min-logo {
+  display: none; }
+
+.contacts {
+  text-align: left; }
+
+.tel__a {
+  color: white; }
+  .tel__a:focus {
+    color: white; }
+  .tel__a:hover {
+    color: white; }
+
 .button {
   display: inline-block;
   border: none;
@@ -302,7 +338,9 @@ body, html {
   .ulBlock {
     font-size: 0.75em; }
   .ulBlock:first-child {
-    margin-top: 10px !important; } }
+    margin-top: 10px !important; }
+  .contacts {
+    text-align: center; } }
 
 @media (max-width: 767px) {
   .logoContainer {
@@ -368,7 +406,10 @@ body, html {
   .ulBlock .li {
     margin-right: 0; }
   .headerBtmHr {
-    display: block; } }
+    display: block; }
+  .min-logo {
+    display: block;
+    margin: 0; } }
 
 @media (max-width: 991px) {
   .main-header {
