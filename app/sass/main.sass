@@ -40,7 +40,7 @@ body, html
 		&:hover
 			color: white
 .main
-
+	margin-top: 200px
 .headerBtmHr
 	display: none
 	border: 0
@@ -51,7 +51,6 @@ body, html
 	display: block
 	margin: 0
 	padding: 0
-	margin-top: 200px
 	margin-left: 122px
 	& .li
 		list-style: none
@@ -77,6 +76,9 @@ body, html
 	.button
 		margin-bottom: 20px
 		margin-right: 20px
+
+.hidden-content
+	display: none
 
 form[name="feedback"]
 	justify-content: center
@@ -155,7 +157,6 @@ form[name="feedback"]
 	&:hover
 		color: white
 
-
 // ----- default Sass Style ----- //
 // button
 .button
@@ -225,7 +226,7 @@ body, html
 		font-size: 2.3em
 	.ulBlock
 		font-size: 0.75em
-	.ulBlock:first-child
+	.main
 		margin-top: 10px !important
 	.contacts
 		text-align: center
@@ -250,8 +251,9 @@ body, html
 	.linkContainer__a
 		width: 100%
 		text-align: center
+	body .main
+		margin-top: 60px	
 	.ulBlock
-		margin-top: 60px !important
 		text-align: center
 		display: flex
 		flex-direction: column
@@ -265,7 +267,7 @@ body, html
 	.min-logo
 		display: block
 		margin: 0
-
+	
 // Large devices (desktops, 992px and up)
 @media (max-width: 991px)
 	.main-header
@@ -288,7 +290,7 @@ body, html
 	
 	.logoContainer__h
 		text-align: center
-	.ulBlock
+	.main
 		margin-top: 120px
 
 // Extra large devices (large desktops, 1200px and up)
