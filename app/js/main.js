@@ -4,15 +4,26 @@ $(function(){
 	var button = $('#bugReport');
 	var form = $('#form');
 	var menu = $('#menu');
+	var menu2 = $('#menu2');
+	var backToMenu = $('#back-to-menu');
 
 	var hiddenContent = 'hidden-content';
 
 	button.bind('click', toggleForm);
+	backToMenu.bind('click', toggleForm);
 	
 	function toggleForm(){
-		console.log(form, menu);
-		form.toggleClass(hiddenContent);
-		menu.toggleClass(hiddenContent);
+		$(this).unbind('click', toggleForm);
+		console.log(form, menu, backToMenu);
+		toggleElem(form);
+		toggleElem(menu);
+		toggleElem(menu2);
+		$(this).bind('click', toggleForm);
+	}
+
+	function toggleElem(jqEl){
+		console.log(jqEl)
+		jqEl.toggleClass(hiddenContent);
 	}
 });
 

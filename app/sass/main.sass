@@ -41,17 +41,19 @@ body, html
 			color: white
 .main
 	margin-top: 200px
-.headerBtmHr
+.hr
 	display: none
 	border: 0
 	height: 1px
 	background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0))
+	width: 100%
 
+.content-padding
+	padding-left: 122px
 .ulBlock
 	display: block
 	margin: 0
 	padding: 0
-	margin-left: 122px
 	& .li
 		list-style: none
 		display: inline-block
@@ -78,7 +80,9 @@ body, html
 		margin-right: 20px
 
 .hidden-content
-	display: none
+	display: none !important
+.form-container
+	margin: 0 auto
 
 form[name="feedback"]
 	justify-content: center
@@ -203,6 +207,8 @@ form[name="feedback"]
 
 .mrg-btm-40
 	margin-bottom: 40px
+.no-padding
+	padding: 0
 
 // footer down
 body, html
@@ -252,17 +258,18 @@ body, html
 		width: 100%
 		text-align: center
 	body .main
-		margin-top: 60px	
+		margin-top: 60px
+	.content-padding
+		padding-left: 0	
 	.ulBlock
 		text-align: center
 		display: flex
 		flex-direction: column
 		justify-content: flex-center
 		align-items: center
-		margin-left: 0
 	.ulBlock .li
 		margin-right: 0
-	.headerBtmHr
+	.hr
 		display: block
 	.min-logo
 		display: block

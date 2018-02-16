@@ -1,109 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Библиотека УралГУФК</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<!-- Chrome, Firefox OS and Opera-->
-		<meta name="theme-color" content="#000">
-		<!-- Windows Phone -->
-		<meta name="msapplication-navbutton-color" content="#000">
-		<!-- iOS Saffari -->
-		<meta name="apple-mobile-web-app-status-bar-style" content="#000">
-		<link rel="stylesheet" href="css/libs.css">
-		<script src="js/libs.min.js"></script>
-		<link rel="stylesheet" href="css/main.css">
-		<script src="js/main.js"></script>
-		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-		
-	</head>
-	<body>
-		<div class="wrapper">
-			<div class="content">
-				<header class="container-fluid main-header">
-					<div class="row">
-						<div class="col-lg-12">
-							<div class="headerContent">
-								<div class="logoContainer">
-									<img src="img/white-logo.png" alt="logo" class="logoContainer__logo wow slideInLeft" data-wow-duration="2s" data-wow-delay="0.5s">
-									<div class="logoContainer__hr wow fadeInDownBig" data-wow-duration="2s" data-wow-delay=".25s"></div>
-									<h1 class="logoContainer__h  wow slideInLeft" data-wow-duration="2s">Библиотека УралГУФК</h1>
-								</div>
-								<div class="linkContainer">
-									<a href="http://uralgufk.ru" class="linkContainer__a wow slideInRight" data-wow-duration="2s">Официальный сайт «УралГУФК»</a>
-									<a href="http://start.uralgufk.ru" class="linkContainer__a wow slideInRight" data-wow-duration="2s" data-wow-delay="0.25s">Официальный сайт газеты «СТАРТ»</a>
-								</div>
-							</div>
-							
-						</div>
-					</div>
-				</header>
-				
-				<main class="main container-fluid">
-					<hr class="headerBtmHr wow fadeInUpBig" data-wow-duration="1.5s">
-					<div class="row">
-						<div class="col-lg-7">
-							<ul class="ulBlock" id="menu">
-								<li class="li wow fadeIn" data-wow-duration="0.5s" data-wow-delay="1.5s"><a title="АРМ - автоматизированное рабочее место" href="#">АРМ Книговыдачи</a></li>
-								<li class="li wow fadeIn" data-wow-duration="0.5s" data-wow-delay="1.7s"><a title="АРМ - автоматизированное рабочее место" href="#">АРМ Книгокомплектования</a></li>
-								<li class="li wow fadeIn" data-wow-duration="0.5s" data-wow-delay="1.9s"><a title="АРМ - автоматизированное рабочее место" href="#">АРМ Читателя</a></li>
-								<li class="li wow fadeIn" data-wow-duration="0.5s" data-wow-delay="2.1s"><a href="#" id="bugReport">Сообщить о неполадке</a></li>
-							</ul>
-						</div>
-					</div>
-						
-							<div class="row">
-								<div class="col-lg-12">
-									<form action="form.php" name="feedback" class="form-horizontal hidden-content" id="form">
-										<div class="form-group">
-											<div class="col-lg-6 col-md-10 col-sm-9 col-xs-12">
-												<input type="text" class="form-control" id="name" placeholder="ФИО">
-											</div>
-										</div>
-										<div class="form-group">
-											<div class="col-lg-6 col-md-10 col-sm-9 col-xs-12">
-												<input type="email" class="form-control" id="email" placeholder="Ваш Email">
-											</div>
-										</div>
-										<div class="form-group mrg-btm-40">
-											<div class="col-lg-6 col-md-10 col-sm-9 col-xs-12">
-												<input type="text" class="form-control" id="theme" placeholder="Тема">
-											</div>
-										</div>
-										<div class="form-group">
-											<div class="col-lg-6 col-md-10 col-sm-9 col-xs-12">
-												<textarea rows="10" class="form-control" id="message" placeholder="Опишите проблему"></textarea>
-											</div>
-										</div>
-										<div class="form-group">
-											<div class="col-lg-3 col-md-10 col-sm-9 col-xs-12">
-												<input form="feedback" type="submit" class="form-control" id="submit" value="Отправить">
-											</div>
-										</div>
-									</form>
-								</div>
-							</div>
-						
-					
-				</main>
-			</div>
-			
-			<footer class="container-fluid main-footer wow fadeIn" data-wow-duration="0.5s" data-wow-delay="2.6s">
-				<div class="row">
-					<div class="col-xs-12 col-sm-4 col-md-0 col-lg-0">
-						<div class="min-logo-container">
-							<img src="img/white-logo.png" alt="logo" class=" wow slideInLeft min-logo" data-wow-duration="2s" data-wow-delay="0.5s">
-						</div>
-						
-					</div>
-					<div class="col-xs-8 col-sm-8 col-md-12 col-lg-12">
-						<div class="contacts">
-							<p>Библиотека: <a href="tel:+73512170446" class="tel__a">8 (351) 217-04-46</a></p>
-							<p>ЦИОТ (ИВЦ): <a href="tel:+73512170234" class="tel__a">8 (351) 217-02-34</a></p>
-						</div>
-					</div>
-				</div>
-			</footer>
-		</div>
-	</body>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Библиотека УралГУФК</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Chrome, Firefox OS and Opera-->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Saffari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <link rel="stylesheet" href="css/libs.css">
+    <script src="js/libs.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <header class="container-fluid main-header">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="headerContent">
+                            <div class="logoContainer">
+                                <img src="img/white-logo.png" alt="logo" class="logoContainer__logo wow slideInLeft" data-wow-duration="2s" data-wow-delay="0.5s">
+                                <div class="logoContainer__hr wow fadeInDownBig" data-wow-duration="2s" data-wow-delay=".25s"></div>
+                                <h1 class="logoContainer__h  wow slideInLeft" data-wow-duration="2s">Библиотека УралГУФК</h1>
+                            </div>
+                            <div class="linkContainer">
+                                <a href="http://uralgufk.ru" class="linkContainer__a wow slideInRight" data-wow-duration="2s">Официальный сайт «УралГУФК»</a>
+                                <a href="http://start.uralgufk.ru" class="linkContainer__a wow slideInRight" data-wow-duration="2s" data-wow-delay="0.25s">Официальный сайт газеты «СТАРТ»</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <hr class="header-hr hr wow fadeInUpBig" data-wow-duration="1.5s">
+            <main class="main container-fluid">
+                <div class="row">
+                    <div class="col-lg-7">
+                    <div class="content-padding">
+                        <ul class="ulBlock" id="menu">
+                            <li class="li wow fadeIn" data-wow-duration="0.5s" data-wow-delay="1.5s"><a title="АРМ - автоматизированное рабочее место" href="#">АРМ Книговыдачи</a></li>
+                            <li class="li wow fadeIn" data-wow-duration="0.5s" data-wow-delay="1.7s"><a title="АРМ - автоматизированное рабочее место" href="#">АРМ Книгокомплектования</a></li>
+                            <li class="li wow fadeIn" data-wow-duration="0.5s" data-wow-delay="1.9s"><a title="АРМ - автоматизированное рабочее место" href="#">АРМ Читателя</a></li>
+                            <li class="li wow fadeIn" data-wow-duration="0.5s" data-wow-delay="2.1s"><a href="#" id="bugReport">Сообщить о неполадке</a></li>
+                        </ul>
+                    </div>
+                        
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-7">
+                    <div class="content-padding">
+                        <ul class="ulBlock hidden-content" id="menu2">
+                            <li class="li wow fadeIn" data-wow-duration="0.5s" data-wow-delay="2.1s"><a href="#" id="back-to-menu">Вернуться в меню</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                    <div class="content-padding form-container">
+                        <form action="form.php" name="feedback" class="form-horizontal hidden-content" id="form">
+                            <div class="form-group">
+                                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 no-padding">
+                                    <input type="text" class="form-control" id="name" placeholder="ФИО">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 no-padding">
+                                    <input type="email" class="form-control" id="email" placeholder="Ваш Email">
+                                </div>
+                            </div>
+                            <div class="form-group mrg-btm-40">
+                                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 no-padding">
+                                    <input type="text" class="form-control" id="theme" placeholder="Тема">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 no-padding">
+                                    <textarea rows="10" class="form-control" id="message" placeholder="Опишите проблему"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 no-padding">
+                                    <input form="feedback" type="submit" class="form-control" id="submit" value="Отправить">
+                                </div>
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+        </div>
+        <hr class="hr footer-hr" data-wow-duration="1.5s">
+        <footer class="container-fluid main-footer" data-wow-duration="0.5s" data-wow-delay="2.6s">
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-0 col-lg-0">
+                    <div class="min-logo-container">
+                        <img src="img/white-logo.png" alt="logo" class=" wow slideInLeft min-logo" data-wow-duration="2s" data-wow-delay="0.5s">
+                    </div>
+                </div>
+                <div class="col-xs-8 col-sm-8 col-md-12 col-lg-12">
+                    <div class="contacts">
+                        <p>Библиотека: <a href="tel:+73512170446" class="tel__a">8 (351) 217-04-46</a></p>
+                        <p>ЦИОТ (ИВЦ): <a href="tel:+73512170234" class="tel__a">8 (351) 217-02-34</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
 </html>
